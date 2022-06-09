@@ -74,7 +74,7 @@ def detect(frame):
 
             # display the prediction
             label = "{}: {:.2f}%".format(CLASSES[idx], confidence * 100)
-            print("[INFO] {}".format(label))
+            #print("[INFO] {}".format(label))
             cv2.rectangle(image, (startX, startY), (endX, endY),
                 COLORS[idx], 2)
             y = startY - 15 if startY - 15 > 15 else startY + 15
